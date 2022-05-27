@@ -3,7 +3,6 @@ import numpy as np
 from matplotlib import pyplot as plt
 from keras.models import load_model
 import tensorflow as tf
-# from skimage import transform
 
 new_class_labels = ['angry', 'disgust', 'fear', 'happy', 'neutral', 'sad', 'surprise']
 
