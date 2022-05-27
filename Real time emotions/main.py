@@ -1,4 +1,4 @@
-from cv2 import VideoCapture, resize, COLOR_BGR2GRAY, cvtColor, CascadeClassifier, rectangle, imshow, waitKey, destroyAllWindows, imread
+from cv2 import VideoCapture, resize, COLOR_BGR2GRAY, cvtColor, CascadeClassifier, rectangle, imshow, waitKey, destroyAllWindows, imread, getWindowProperty, WND_PROP_VISIBLE
 import numpy as np
 from matplotlib import pyplot as plt
 from keras.models import load_model
@@ -33,13 +33,11 @@ while vid.isOpened():
 
     imshow('VIDEOCAM', frame)
     imshow('EMOJI', emojis[mean_prediction])
-    waitKey(1)
-    # if waitKey(1) == 27:
-    #     destroyAllWindows()
+    # waitKey(1)
+    if waitKey(1) == 27:
+        break
+    if getWindowProperty('VIDEOCAM', WND_PROP_VISIBLE) < 1 or getWindowProperty('EMOJI', WND_PROP_VISIBLE) < 1:
+        break
 
+destroyAllWindows()
 
-    # destroyAllWindows()
-
-    # plt.imshow(frame, cmap='gray')
-    # plt.title(prediction)
-    # plt.show()
