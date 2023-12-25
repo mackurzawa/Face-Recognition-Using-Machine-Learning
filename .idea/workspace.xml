@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="312fe94e-c491-407e-966f-819263975415" name="Default Changelist" comment="" />
+    <list default="true" id="312fe94e-c491-407e-966f-819263975415" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Model Training and Prediction.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Model Training and Prediction.ipynb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
